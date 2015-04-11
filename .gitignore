@@ -1,0 +1,16 @@
+# gitignore
+Thumbs.db
+.DS_Store
+*.bak
+.idea
+
+_notes/
+xcuserdata/
+*.xccheckout
+\#*\#
+.\#*
+
+# for Cordova 3.0 or later
+platforms/ios/www
+/platforms/ios/cordova/console.log
+
