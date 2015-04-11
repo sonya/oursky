@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html ng-app="oursky">
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -32,10 +32,12 @@
 
         <script src="lib/onsen/js/angular/angular.js"></script>
         <script src="lib/onsen/js/onsenui.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/camera.js"></script>
 
         <script src="http://www.webglearth.com/v2/api.js"></script>
         <script>
-            ons.bootstrap();
+//            ons.bootstrap();
 
             // for earth tab
             function initializeWebGLEarth() {
@@ -49,28 +51,23 @@
             #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
         </style>
     </head>
-    <body">
-        <ons-page>
+    <body>
+        <ons-page ng-controller="TabController">
             <ons-tabbar>
                 <ons-tab page="camera.html" active="true">
                     <ons-icon icon="ion-camera" style="font-size: 28px"></ons-icon>
                 </ons-tab>
-                <ons-tab page="calendar.html" active="true">
+                <ons-tab page="calendar.html">
                     <ons-icon icon="ion-calendar" style="font-size: 28px"></ons-icon>
                 </ons-tab>
-                <ons-tab page="cloud.html" active="true">
+                <ons-tab page="cloud.html">
                     <ons-icon icon="ion-cloud" style="font-size: 28px"></ons-icon>
                 </ons-tab>
-                <ons-tab page="earth.html" active="true">
+                <ons-tab page="earth.html">
                     <ons-icon icon="ion-earth" style="font-size: 28px"></ons-icon>
                 </ons-tab>
             </ons-tabbar>
 
-            <ons-template id="camera.html">
-                <ons-page>
-
-                </ons-page>
-            </ons-template>
 
             <ons-template id="calendar.html">
                 <ons-page>
@@ -86,7 +83,7 @@
             
             <ons-template id="earth.html">
                 <ons-page>
-                    <div id="earth_div""></div>
+                    <div id="earth_div"></div>
                 </ons-page>
             </ons-template>
         </ons-page>
