@@ -1,4 +1,21 @@
-<html>
-    <body>
-    </body>
-</html>
+<ons-page ng-controller="CalendarController">
+
+    <h1>{{currentMonth}}</h1>
+
+    <div>
+        <ons-list class="calendar" modifier="inset">
+            <ons-list-item class="calendar-item" modifier="tappable">
+                <ons-row class="calendar-row" ng-repeat="calendarRow in calendarRows">
+                    <ons-col class="calendar-cell" ng-click="calendarItemClick(this)" ng-repeat="calendarCell in calendarRow">
+                        <div class="calendar-image" style="background: url({{calendarCell.imageURI}})">
+                            <div class="calendar-date-overlay">
+                                {{calendarCell.date}}
+                            </div>
+                        </div>
+                    </ons-col>
+                </ons-row>
+            </ons-list-item>
+        </ons-list>
+    </div>
+
+</ons-page>

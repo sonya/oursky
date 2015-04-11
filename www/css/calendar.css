@@ -1,0 +1,24 @@
+.calendar-cell {
+    width: 12%;
+    text-align: center;
+    display: table-cell;
+}
+
+.calendar {
+    margin: 10px 0 0 10px;
+}
+
+.calendar-image {
+    height: 50px;
+    width: 40px;
+    margin: 2px;
+}
+
+.calendar-row {
+    display: table-row;
+}
+
+.calendar-date-overlay {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
