@@ -25,34 +25,42 @@
 
     "2015-04-01": [
         {
-            "url": "img/seeddata/IMG_0197_small.JPG",
+            "url": "img/seeddata/IMG_0202_small.JPG",
             "time": "10:00 AM",
             "location": "Somerville, MA",
             "color": "Deep blue"
         }
     ],
+
     "2015-04-03": [
         {
-            "url": "img/seeddata/IMG_0201_small.JPG",
-            "time": "11:00 AM",
+            "url": "img/seeddata/IMG_0208_small.JPG",
+            "time": "8:50 AM",
             "location": "Somerville, MA",
             "color": "Milky"
         }
     ],
+
     "2015-04-04": [
         {
-            "url": "img/seeddata/IMG_0202_small.JPG",
-            "time": "4:00 PM",
+            "url": "img/seeddata/IMG_0197_small.JPG",
+            "time": "5:23 PM",
             "location": "Somerville, MA",
-            "color": "Milky"
+            "color": "Deep blue"
         }
     ],
     "2015-04-05": [
         {
-            "url": "img/seeddata/IMG_0208_small.JPG",
-            "time": "5:00 PM",
+            "url": "img/seeddata/IMG_0201_small.JPG",
+            "time": "12:40 PM",
             "location": "Somerville, MA",
-            "color": "Deep blue"
+            "color": "Milky"
+        },
+        {
+            "url": "img/seeddata/IMG_0202_small.JPG",
+            "time": "12:42 PM",
+            "location": "Somerville, MA",
+            "color": "Milky"
         }
     ],
 
@@ -86,6 +94,15 @@
             "time": "3:00 PM",
             "location": "Boston, MA",
             "color": "Deep blue"
+        }
+    ],
+
+    "2015-04-11": [
+        {
+            "url": "img/seeddata/IMG_0208_small.JPG",
+            "time": "8:50 AM",
+            "location": "Somerville, MA",
+            "color": "Milky"
         }
     ],
 

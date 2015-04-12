@@ -6,7 +6,9 @@
     app.controller('CalendarController', function($scope) {
 
         var imageList = {};
+        var aeronetImages = {}
         var getImageList = function() {
+            // get user's photos of the sky
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4) {
@@ -17,10 +19,20 @@
             };
             xhr.open('GET', 'img/seeddata/seeddata.json', true);
             xhr.send();
+
+            // get aeronet images
+            var xhr2 = new XMLHttpRequest();
+            xhr2.onreadystatechange = function() {
+                if (xhr2.readyState == 4) {
+                    aeronetImages = JSON.parse(xhr2.responseText);
+                    $scope.$apply();
+                }
+            };
+            xhr2.open('GET', 'img/aeronetseed/seeddata.json', true);
+            xhr2.send();
         };
 
-        // eventually this will come from a photo service
-        var getImageDataForDate = function(date) {
+        var getDateKeyForDate = function(date) {
             var year = date.getYear() + 1900;
             var month = date.getMonth() + 1;
             if (month < 10) {
@@ -31,8 +43,12 @@
                 datedate = '0' + datedate;
             }
 
-            var dateKey = year + '-' + month + '-' + datedate;
+            return year + '-' + month + '-' + datedate;
+        };
 
+        // eventually this will come from a photo service
+        var getImageDataForDate = function(date) {
+            var dateKey = getDateKeyForDate(date);
             var images = [];
 
             if (dateKey in imageList) {
@@ -155,6 +171,16 @@
 
             var heading = document.getElementById('calendar-day-heading');
             heading.innerHTML = '<h2>' + date.toDateString() + '</h2>'
+
+            var aeronetNode = document.getElementById('aeronet-comparison');
+            var dateKey = getDateKeyForDate(date);
+            if (dateKey in aeronetImages) {
+                var aeronetImageSrc = aeronetImages[dateKey].url;
+                aeronetNode.innerHTML = '<div class="aeronet-image">\
+                    <img src="' + aeronetImageSrc + '" width="300px" /></div>';
+            } else {
+                aeronetNode.innerHTML = '';
+            }
 
             showNode('calendar-day');
             hideNode('calendar');
