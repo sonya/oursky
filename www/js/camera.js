@@ -82,7 +82,7 @@
             { label: "Light Blue", imageClassName: "sky-light-blue" },
             { label: "Pale Blue",  imageClassName: "sky-pale-blue" },
             { label: "Milky",      imageClassName: "sky-milky" },
-            { label: "Cloudy",     imageClassName: "sky-cloudy" }
+            { label: "Other",      imageClassName: "sky-other" }
 
         ];
 
