@@ -38,18 +38,6 @@
         <script src="js/camera.js"></script>
         <script src="js/calendar.js"></script>
 
-        <script src="http://www.webglearth.com/v2/api.js"></script>
-        <script>
-//            ons.bootstrap();
-
-            // for earth tab
-            function initializeWebGLEarth() {
-                var earth = new WE.map('earth_div');
-                WE.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
-                             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-                             }).addTo(earth);
-            }
-        </script>
         <style>
             #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
         </style>

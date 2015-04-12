@@ -1,8 +1,8 @@
 <ons-page ng-controller="CalendarController">
 
-    <h1>{{currentMonth}}</h1>
+    <div id="calendar">
+        <h1>{{currentMonth}}</h1>
 
-    <div>
         <ons-list class="calendar" modifier="inset">
             <ons-list-item class="calendar-item" modifier="tappable">
                 <ons-row class="calendar-row" ng-repeat="calendarRow in calendarRows">
@@ -14,6 +14,20 @@
                         </div>
                     </ons-col>
                 </ons-row>
+            </ons-list-item>
+        </ons-list>
+    </div>
+
+    <div id="calendar-day" class="hidden">
+        <a class="calendar-back" ng-click="backToCalendar(this)">Back</a>
+
+        <ons-list id="calendar-day-list" class="day" modifier="inset">
+            <!-- this is actually all being overwritten in JS because i don't know how updating works -->
+            <ons-list-item class="day-item" modifier="tappable" ng-repat="imageItem in [images]">
+                <div class="day-image"><img src="{{imageItem.url}}" /></div>
+                <div class="day-caption day-location">Location: {{imageItem.location}}</div>
+                <div class="day-caption day-time">Time: {{imageItem.time}}</div>
+                <div class="day-caption day-color">Color: {{imageItem.color}}</div>
             </ons-list-item>
         </ons-list>
     </div>

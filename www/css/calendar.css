@@ -5,13 +5,14 @@
 }
 
 .calendar {
-    margin: 10px 0 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .calendar-image {
     height: 50px;
     width: 40px;
-    margin: 2px;
+    margin: 2px 1px;
 }
 
 .calendar-row {
@@ -21,4 +22,25 @@
 .calendar-date-overlay {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.day-item {
+    margin: 10px;
+}
+
+.day-image {
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.day-image img {
+    max-height: 480px;
+}
+
+.day-caption {
+    margin-left: 10px;
 }
