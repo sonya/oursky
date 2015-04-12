@@ -52,39 +52,42 @@
         var getPhotoCellsForCurrentMonth = function () {
             var rows = [];
 
-            var date = new Date();
+            var date = new Date(Date.now());
 
-            var month = date.getMonth() + 1;
-            var year = date.getYear();
+            var month = date.getMonth();
+            var year = date.getYear() + 1900;
 
             // http://stackoverflow.com/a/1184359
-            var numberOfDays = new Date(year, month, 0).getDate();
+            var numberOfDays = new Date(year, month+1, 0).getDate();
 
             // extra call at loop beginning
             date = new Date(year, month, 1);
+
             var dayOfWeek = date.getDay();
 
-            var currentRow = []
-            for (var i = 0; i < dayOfWeek; i++) {
-                // push empty cells until the first day of the month
-                currentRow.push({
-                    // TODO: get date from previous month
-                    date: 0,
-                    dateObject: null,
-                    imageURI: null
-                });
+            var currentRow = [];
+            if (dayOfWeek > 0) {
+                var pastDate = new Date(year, month, 0).getDate();
+                for (var i = 0; i < dayOfWeek; i++) {
+                    // push empty cells until the first day of the month
+                    currentRow.push({
+                        date: pastDate - dayOfWeek + i + 1,
+                        dateObject: null,
+                        imageURI: null
+                    });
+                }
             }
 
             for (var i = 1; i <= numberOfDays; i++) {
-                date = new Date(year, month, i);
-                dayOfWeek = date.getDay();
+                var dateObject = new Date(year, month, i);
+                dayOfWeek = dateObject.getDay();
 
                 if (dayOfWeek == 0 && currentRow.length > 0) {
                     rows.push(currentRow);
                     currentRow = [];
                 }
 
-                var images = getImageDataForDate(date);
+                var images = getImageDataForDate(dateObject);
                 var imageURI = null;
                 if (images.length > 0) {
                     imageURI = images[0].url;
@@ -92,17 +95,17 @@
 
                 currentRow.push({
                     date: i,
-                    dateObject: date,
+                    dateObject: dateObject,
                     imageURI: imageURI
                 });
             }
 
             if (dayOfWeek != 6) {
                 // finish loop
+                var nextDate = 1;
                 for (var i = dayOfWeek+1; i <= 6; i++) {
                     currentRow.push({
-                        // TODO: add dates for next month
-                        date: 0,
+                        date: nextDate++,
                         dateObject: null,
                         imageURI: null
                     });
@@ -116,7 +119,7 @@
                 "July", "August", "September", "October", "November", "December"
             ];
 
-            $scope.currentMonth = englishMonthNames[month-1];
+            $scope.currentMonth = englishMonthNames[month];
             $scope.calendarRows = rows;
         };
 
@@ -153,6 +156,9 @@
             }
             var list = document.getElementById('calendar-day-list');
             list.innerHTML = listInnerHTML;
+
+            var heading = document.getElementById('calendar-day-heading');
+            heading.innerHTML = '<h2>' + date.toDateString() + '</h2>'
 
             showNode('calendar-day');
             hideNode('calendar');

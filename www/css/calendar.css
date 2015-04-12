@@ -44,3 +44,8 @@
 .day-caption {
     margin-left: 10px;
 }
+
+#calendar-day-heading {
+    margin-left: 10px;
+    text-transform: none;
+}

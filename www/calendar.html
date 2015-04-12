@@ -21,6 +21,8 @@
     <div id="calendar-day" class="hidden">
         <a class="calendar-back" ng-click="backToCalendar(this)">Back</a>
 
+        <div id="calendar-day-heading"></div>
+
         <ons-list id="calendar-day-list" class="day" modifier="inset">
             <!-- this is actually all being overwritten in JS because i don't know how updating works -->
             <ons-list-item class="day-item" modifier="tappable" ng-repat="imageItem in [images]">
