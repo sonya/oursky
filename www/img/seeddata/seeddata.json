@@ -1,0 +1,184 @@
+{
+    "2015-03-29": [
+        {
+            "url": "img/seeddata/Sky%20pic%2013.JPG",
+            "time": "1:00 PM",
+            "location": "Boston, MA",
+            "color": "Milky"
+        },
+        {
+            "url": "img/seeddata/Sky%20pic%2008.JPG",
+            "time": "8:00 AM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-03-31": [
+        {
+            "url": "img/seeddata/Sky%20pic%2009.JPG",
+            "time": "9:00 AM",
+            "location": "Boston, MA",
+            "color": "Deep blue"
+        }
+    ],
+
+    "2015-04-01": [
+        {
+            "url": "img/seeddata/IMG_0197_small.JPG",
+            "time": "10:00 AM",
+            "location": "Somerville, MA",
+            "color": "Deep blue"
+        }
+    ],
+    "2015-04-03": [
+        {
+            "url": "img/seeddata/IMG_0201_small.JPG",
+            "time": "11:00 AM",
+            "location": "Somerville, MA",
+            "color": "Milky"
+        }
+    ],
+    "2015-04-04": [
+        {
+            "url": "img/seeddata/IMG_0202_small.JPG",
+            "time": "4:00 PM",
+            "location": "Somerville, MA",
+            "color": "Milky"
+        }
+    ],
+    "2015-04-05": [
+        {
+            "url": "img/seeddata/IMG_0208_small.JPG",
+            "time": "5:00 PM",
+            "location": "Somerville, MA",
+            "color": "Deep blue"
+        }
+    ],
+
+    "2015-04-07": [
+        {
+            "url": "img/seeddata/Sky%20pic%2001.JPG",
+            "time": "1:00 PM",
+            "location": "Boston, MA",
+            "color": "Deep blue"
+        },
+        {
+            "url": "img/seeddata/Sky%20pic%2008.JPG",
+            "time": "8:00 AM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-04-08": [
+        {
+            "url": "img/seeddata/Sky%20pic%2002.JPG",
+            "time": "2:00 PM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-04-09": [
+        {
+            "url": "img/seeddata/Sky%20pic%2003.JPG",
+            "time": "3:00 PM",
+            "location": "Boston, MA",
+            "color": "Deep blue"
+        }
+    ],
+
+    "2015-04-12": [
+        {
+            "url": "img/seeddata/Sky%20pic%2004.JPG",
+            "time": "4:00 PM",
+            "location": "Boston, MA",
+            "color": "Pale blue"
+        }
+    ],
+
+    "2015-04-13": [
+        {
+            "url": "img/seeddata/Sky%20pic%2005.JPG",
+            "time": "5:00 PM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        },
+        {
+            "url": "img/seeddata/Sky%20pic%2008.JPG",
+            "time": "8:00 AM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-04-14": [
+        {
+            "url": "img/seeddata/Sky%20pic%2006.JPG",
+            "time": "6:00 PM",
+            "location": "Boston, MA",
+            "color": "Light blue"
+        }
+    ],
+
+    "2015-04-16": [
+        {
+            "url": "img/seeddata/Sky%20pic%2007.JPG",
+            "time": "7:00 AM",
+            "location": "Boston, MA",
+            "color": "Light blue"
+        },
+        {
+            "url": "img/seeddata/Sky%20pic%2008.JPG",
+            "time": "8:00 AM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-04-17": [
+        {
+            "url": "img/seeddata/Sky%20pic%2008.JPG",
+            "time": "8:00 AM",
+            "location": "Boston, MA",
+            "color": "Deep blue"
+        }
+    ],
+
+    "2015-04-18": [
+        {
+            "url": "img/seeddata/Sky%20pic%2009.JPG",
+            "time": "9:00 AM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-04-19": [
+        {
+            "url": "img/seeddata/Sky%20pic%2010.JPG",
+            "time": "10:00 AM",
+            "location": "Boston, MA",
+            "color": "Light blue"
+        }
+    ],
+
+    "2015-04-22": [
+        {
+            "url": "img/seeddata/Sky%20pic%2011.JPG",
+            "time": "11:00 AM",
+            "location": "Boston, MA",
+            "color": "Blue"
+        }
+    ],
+
+    "2015-04-24": [
+        {
+            "url": "img/seeddata/Sky%20pic%2012.JPG",
+            "time": "12:00 PM",
+            "location": "Boston, MA",
+            "color": "Deep blue"
+        }
+    ]
+}

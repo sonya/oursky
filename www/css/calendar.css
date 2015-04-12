@@ -49,3 +49,12 @@
     margin-left: 10px;
     text-transform: none;
 }
+
+.past-month {
+    color: rgba(60, 60, 100, 255);
+}
+
+.next-month {
+    color: rgba(80, 80, 100, 255);
+}
+

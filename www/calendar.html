@@ -8,7 +8,7 @@
                 <ons-row class="calendar-row" ng-repeat="calendarRow in calendarRows">
                     <ons-col class="calendar-cell" ng-click="calendarItemClick(this)" ng-repeat="calendarCell in calendarRow">
                         <div class="calendar-image" style="background: url({{calendarCell.imageURI}})">
-                            <div class="calendar-date-overlay">
+                            <div class="calendar-date-overlay {{calendarCell.cssClass}}">
                                 {{calendarCell.date}}
                             </div>
                         </div>
