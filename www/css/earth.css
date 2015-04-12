@@ -1,4 +1,4 @@
-@import url(lib/cesium/Widgets/widgets.css);
+@import url(../lib/cesium/Widgets/widgets.css);
 #cesiumContainerWrapper{
   padding: 0;
   margin: 0;
