@@ -1,0 +1,34 @@
+/* camera css */
+.image-sky-box {
+    text-align:  center;
+}
+
+.image-sky-box > img {
+    width: auto;
+    max-height: 160px;
+}
+
+/* Sky color */
+.color-block {
+    text-shadow: 2px 2px 0px black;
+    display: block;
+    height: 2.5em;
+}
+.sky-deep-blue {
+   background-color: #6C7AFF;
+}
+.sky-blue {
+    background-color: #93A0FF;
+}
+.sky-light-blue {
+    background-color: #B2C2FF;
+}
+.sky-pale-blue {
+    background-color: #D2DEFF;
+}
+.sky-milky {
+    background-color: #F1FBFF;
+}
+.sky-cloudy {
+    background-color: white;
+}
